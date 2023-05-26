@@ -27,8 +27,15 @@ main {
   height: 500px;
 }
 
+
 /* 10. Posicione os campos de Nome e Sobrenome lado a lado. */
-#evaluation-form > input {
-  width: 50%;
+/*11. Posicione os campos de Email e Casa lado a lado.*/
+.primeira-parte {
+  display: flex;
+  flex-wrap: wrap;
+}
+.primeira-parte > input,
+#house {
+  width: 45%;
   height: fit-content;
 }

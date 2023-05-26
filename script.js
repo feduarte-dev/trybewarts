@@ -1,6 +1,6 @@
 const loginBtn = document.getElementById('login-btn');
-const inputEmail = document.getElementById('input-email');
-const inputPw = document.getElementById('input-pw');
+const inputEmail = document.getElementById('email-input');
+const inputPw = document.getElementById('pw-input');
 
 // Função do requisito 3: valida valores digitados no header ao clicar no botão Entrar.
 loginBtn.addEventListener('click', () => {
