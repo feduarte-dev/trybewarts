@@ -19,3 +19,7 @@ main {
   /* 6. Faça com que a direção do formulário seja vertical. */
   flex-direction: column;
 }
+/* 7. Adicione a logo da Trybewarts ao lado direito da página. */
+#trybewarts-forms-logo {
+  height: 500px;
+}
