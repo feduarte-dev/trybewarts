@@ -1,9 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+}
+
 /* 1. Crie uma barra verde na parte superior da página. */
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  height: 60px;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+.header img {
+  width: 50px;
+  margin-left: 10px;
+}
+.trybewarts-login > input {
+  margin: 0 5px;
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 10px;
 }
 
+.trybewarts-login > button {
+  margin: 0 10px 0 5px;
+  padding: 6px 30px;
+  background-color: rgb(93, 34, 121);
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
 /* 3. Acrescente um formulário de login no header. */
 .trybewarts-login {
   display: flex;
@@ -20,22 +52,44 @@ main {
 
   /* 6. Faça com que a direção do formulário seja vertical. */
   flex-direction: column;
+  padding: 0 60px;
+}
+
+#evaluation-form > h1 {
+  text-align: center;
+  margin: 25px 0;
 }
 
 /* 7. Adicione a logo da Trybewarts ao lado direito da página. */
 #trybewarts-forms-logo {
+  margin-top: 80px;
   height: 500px;
 }
-
 
 /* 10. Posicione os campos de Nome e Sobrenome lado a lado. */
 /*11. Posicione os campos de Email e Casa lado a lado.*/
 .primeira-parte {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
 }
-.primeira-parte > input,
+
+#input-name, #input-lastname, #input-email {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin: 4px 1px 15px 0;
+}
+
 #house {
-  width: 45%;
-  height: fit-content;
+  background-color: white;
+  width: 41%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin: 4px 1px 15px 0;
+}
+
+.segunda-parte {
+  display: flex;
+  flex-direction: column;
 }

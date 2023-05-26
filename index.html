@@ -35,6 +35,7 @@
     <!-- 5. Adicione um formulário no corpo da página. -->
     <main>
       <form id="evaluation-form" action="">
+        <h1>Formulário de Avaliação</h1>
         <div class="primeira-parte">
         <!-- 8. Acrescente inputs de nome, sobrenome e email ao formulário. -->
         <input id="input-name" type="text" placeholder="Nome" />
@@ -48,6 +49,17 @@
           <option id="corvinode-house" value="Corvinode">Corvinode</option>
           <option id="pytherina-house" value="Pytherina">Pytherina</option>
         </select>
+      </div>
+        <hr />
+        <div class="segunda-parte">
+        <!-- 12. Adicione 3 inputs do tipo radio ao formulário. -->
+        <label id="label-family" for="family">Qual sua família?</label>
+        <input type="radio" name="family" id="Frontend" value="Frontend" />
+        <label for="Frontend">Frontend</label>
+        <input type="radio" name="family" id="Backend" value="Backend" />
+        <label for="Backend">Backend</label>
+        <input type="radio" name="family" id="FullStack" value="FullStack" />
+        <label for="FullStack">FullStack</label>
       </div>
       </form>
       <!-- 7. Adicione a logo da Trybewarts ao lado direito da página. -->
