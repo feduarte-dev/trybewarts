@@ -3,3 +3,8 @@
   display: flex;
   background-color: rgb(50, 167, 145);
 }
+
+/* 3. Acrescente um formulário de login no header. */
+.trybewarts-login {
+  display: flex;
+}

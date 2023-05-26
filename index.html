@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trybewarts</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <!-- 1. Crie uma barra verde na parte superior da página. -->
-  <header class="header">
-  <!-- 2. Adicione o logotipo da Trybewarts. -->
-  <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="trybewarts-logo">
-</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trybewarts</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
+  <body>
+    <!-- 1. Crie uma barra verde na parte superior da página. -->
+    <header class="header">
+      <!-- 2. Adicione o logotipo da Trybewarts. -->
+      <img
+        class="trybewarts-header-logo"
+        src="images/trybewarts-header-logo.svg"
+        alt="trybewarts-logo"
+      />
+      <!-- 3. Acrescente um formulário de login no header. -->
+      <form class="trybewarts-login" action="">
+        <input id="input-email" type="email" name="email" placeholder="Email" />
+        <input id="input-pw" type="password" name="password" placeholder="Senha" />
+        <button id="login-btn">Entrar</button>
+      </form>
+    </header>
 
-
-
-
-
-
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
