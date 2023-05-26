@@ -17,10 +17,12 @@ body {
   color: white;
   align-items: center;
 }
+
 .header img {
   width: 50px;
   margin-left: 10px;
 }
+
 .trybewarts-login > input {
   margin: 0 5px;
   padding: 6px;
@@ -36,6 +38,7 @@ body {
   border: 1px solid transparent;
   border-radius: 10px;
 }
+
 /* 3. Acrescente um formulário de login no header. */
 .trybewarts-login {
   display: flex;
@@ -67,14 +70,13 @@ main {
 }
 
 /* 10. Posicione os campos de Nome e Sobrenome lado a lado. */
-/*11. Posicione os campos de Email e Casa lado a lado.*/
+
+/* 11. Posicione os campos de Email e Casa lado a lado. */
 .primeira-parte {
   display: inline-block;
 }
 
-#input-name,
-#input-lastname,
-#input-email {
+#input-name , #input-lastname , #input-email {
   width: 48%;
   padding: 10px;
   border: 1px solid transparent;
@@ -93,13 +95,16 @@ main {
 
 .segunda-parte {
   display: flex;
+
   /* height: 150px; */
 }
+
 .sub-container {
   display: flex;
   flex-direction: column;
 }
-.sub-container:nth-of-type(1) {
+
+.sub-container:nth-of-type( 1 ) {
   flex-basis: 45%;
 }
 
