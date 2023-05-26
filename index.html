@@ -37,30 +37,79 @@
       <form id="evaluation-form" action="">
         <h1>Formulário de Avaliação</h1>
         <div class="primeira-parte">
-        <!-- 8. Acrescente inputs de nome, sobrenome e email ao formulário. -->
-        <input id="input-name" type="text" placeholder="Nome" />
-        <input id="input-lastname" type="text" placeholder="Sobrenome" />
-        <input id="input-email" type="email" placeholder="Email" />
-        <!-- 9. Acrescente um select ao formulário. -->
-        <label for="house">Casa: </label>
-        <select id="house" name="">
-          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-          <option id="corvinode-house" value="Corvinode">Corvinode</option>
-          <option id="pytherina-house" value="Pytherina">Pytherina</option>
-        </select>
-      </div>
+          <!-- 8. Acrescente inputs de nome, sobrenome e email ao formulário. -->
+          <input id="input-name" type="text" placeholder="Nome" />
+          <input id="input-lastname" type="text" placeholder="Sobrenome" />
+          <input id="input-email" type="email" placeholder="Email" />
+          <!-- 9. Acrescente um select ao formulário. -->
+          <label for="house">Casa: </label>
+          <select id="house" name="">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+          </select>
+        </div>
         <hr />
         <div class="segunda-parte">
-        <!-- 12. Adicione 3 inputs do tipo radio ao formulário. -->
-        <label id="label-family" for="family">Qual sua família?</label>
-        <input type="radio" name="family" id="Frontend" value="Frontend" />
-        <label for="Frontend">Frontend</label>
-        <input type="radio" name="family" id="Backend" value="Backend" />
-        <label for="Backend">Backend</label>
-        <input type="radio" name="family" id="FullStack" value="FullStack" />
-        <label for="FullStack">FullStack</label>
-      </div>
+          <div class="sub-container">
+            <!-- 12. Adicione 3 inputs do tipo radio ao formulário. -->
+            <label id="label-family" for="family">Qual sua família?</label>
+            <label for="Frontend">
+              <input
+                type="radio"
+                name="family"
+                id="Frontend"
+                value="Frontend"
+              />
+              Família Frontend</label
+            >
+            <label for="Backend">
+              <input type="radio" name="family" id="Backend" value="Backend" />
+              Família Backend</label
+            >
+            <label for="FullStack">
+              <input
+                type="radio"
+                name="family"
+                id="FullStack"
+                value="FullStack"
+              />
+              Família FullStack</label
+            >
+          </div>
+          <!-- 13. Crie inputs do tipo checkbox. -->
+          <div class="teste">
+            <label id="label-content" for="subject"
+              >Qual conteúdo você está com mais vontade de aprender?</label
+            >
+            <div class="sub-container">
+              <label for="HoFs">
+                <input class="subject" type="checkbox" value="HoFs" id="HoFs" />
+                HoFs</label
+              >
+              <label for="Jest" id="Jest">
+                <input class="subject" type="checkbox" value="Jest" />
+                Jest</label
+              >
+              <label for="Promises" id="Promises">
+                <input class="subject" type="checkbox" value="Promises" />
+                Promises</label
+              >
+              <label for="React" id="React">
+                <input class="subject" type="checkbox" value="React" />
+                React</label
+              >
+              <label for="SQL" id="SQL">
+                <input class="subject" type="checkbox" value="SQL" /> SQL</label
+              >
+              <label for="Python" id="Python">
+                <input class="subject" type="checkbox" value="Python" />
+                Python</label
+              >
+            </div>
+          </div>
+        </div>
       </form>
       <!-- 7. Adicione a logo da Trybewarts ao lado direito da página. -->
       <aside>
