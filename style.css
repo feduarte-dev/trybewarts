@@ -93,7 +93,7 @@ main {
 
 .segunda-parte {
   display: flex;
-  height: 150px;
+  /* height: 150px; */
 }
 .sub-container {
   display: flex;
@@ -105,4 +105,9 @@ main {
 
 .sub-container > label {
   margin: 8px 0;
+}
+
+.radio-buttons {
+  display: flex;
+  flex-direction: row;
 }
