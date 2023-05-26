@@ -13,13 +13,22 @@
 main {
   display: flex;
 }
+
 #evaluation-form {
   display: flex;
   width: 675px;
+
   /* 6. Faça com que a direção do formulário seja vertical. */
   flex-direction: column;
 }
+
 /* 7. Adicione a logo da Trybewarts ao lado direito da página. */
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+/* 10. Posicione os campos de Nome e Sobrenome lado a lado. */
+#evaluation-form > input {
+  width: 50%;
+  height: fit-content;
 }
