@@ -19,7 +19,7 @@
       <!-- 4. Crie um título com o texto "Trybewarts" centralizado dentro do Header. -->
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <!-- 3. Acrescente um formulário de login no header. -->
-      <form class="trybewarts-login" action="">
+      <form class="trybewarts-login">
         <input id="email-input" type="email" name="email" placeholder="Email" />
         <input
           id="pw-input"
@@ -56,6 +56,7 @@
             <label id="label-family" for="family">Qual sua família?</label>
             <label for="Frontend">
               <input
+                class="family"
                 type="radio"
                 name="family"
                 id="Frontend"
@@ -64,11 +65,18 @@
               Família Frontend</label
             >
             <label for="Backend">
-              <input type="radio" name="family" id="Backend" value="Backend" />
+              <input
+                class="family"
+                type="radio"
+                name="family"
+                id="Backend"
+                value="Backend"
+              />
               Família Backend</label
             >
             <label for="FullStack">
               <input
+                class="family"
                 type="radio"
                 name="family"
                 id="FullStack"
@@ -84,7 +92,7 @@
             >
             <div class="sub-container">
               <label for="HoFs">
-                <input class="subject" type="checkbox" value="HoFs" id="HoFs" />
+                <input class="subject" type="checkbox" value="HoFs" />
                 HoFs</label
               >
               <label for="Jest" id="Jest">
@@ -146,16 +154,16 @@
           >
         </div>
         <!-- 15. Crie uma textarea. -->
-        <label class="textarea" for="observacoes"
+        <label class="textarea" for="textarea"
           >Deixe seu comentário:
           <textarea
             name="Observações"
-            id="observacoes"
+            id="textarea"
             cols="30"
             rows="5"
             maxlength="500"
           ></textarea>
-          
+          <span id="counter">500</span>
         </label>
         <!-- 16. Crie uma checkbox que servirá para validar as informações digitadas pela pessoa usuária. -->
         <label id="label-infos" for="">
@@ -165,6 +173,8 @@
         <!-- 17. Crie um botão de "Enviar" para submeter o formulário. -->
         <button id="submit-btn" type="submit" disabled>Enviar</button>
       </form>
+      <!-- 21. Substitua o formulário pelas informações da pessoa estudante. -->
+      <form id="form-data"></form>
       <!-- 7. Adicione a logo da Trybewarts ao lado direito da  página. -->
       <aside>
         <img
