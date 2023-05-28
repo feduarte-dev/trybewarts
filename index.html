@@ -7,7 +7,6 @@
     <title>Trybewarts</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-
   <body>
     <!-- 1. Crie uma barra verde na parte superior da página. -->
     <header class="header">
@@ -112,6 +111,7 @@
         </div>
         <hr />
         <div class="radio-buttons">
+          <!-- 14. Crie um campo de avaliação. -->
           <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
 
           <label for="1">
@@ -145,6 +145,7 @@
             <input type="radio" name="rate" value="10" id="10" /> 10</label
           >
         </div>
+        <!-- 15. Crie uma textarea. -->
         <label class="textarea" for="observacoes"
           >Deixe seu comentário:
           <textarea
@@ -154,11 +155,14 @@
             rows="5"
             maxlength="500"
           ></textarea>
+          
         </label>
+        <!-- 16. Crie uma checkbox que servirá para validar as informações digitadas pela pessoa usuária. -->
         <label id="label-infos" for="">
           Você concorda com o uso das informações acima?
           <input id="agreement" type="checkbox" />
         </label>
+        <!-- 17. Crie um botão de "Enviar" para submeter o formulário. -->
         <button id="submit-btn" type="submit" disabled>Enviar</button>
       </form>
       <!-- 7. Adicione a logo da Trybewarts ao lado direito da  página. -->
@@ -170,6 +174,7 @@
         />
       </aside>
     </main>
+    <!-- 19. Crie um rodapé ao final da página. -->
     <footer>Direitos reservados à Trybewarts©</footer>
     <script src="./script.js"></script>
   </body>

@@ -13,11 +13,11 @@ loginBtn.addEventListener('click', () => {
   }
 });
 
-// Pegamos a idéia a partir desse link: https://stackoverflow.com/questions/18110865/how-to-disable-enable-a-button-with-a-checkbox-if-checked
-checkbox.onchange = function habilitaBotao() {
+// Função do requisito 18: para habilitar o botão de envio apenas quando a checkbox estiver marcada.
+checkbox.addEventListener('change', () => {
   if (checkbox.checked) {
     submitBtn.disabled = false;
   } else {
     submitBtn.disabled = true;
   }
-};
+});

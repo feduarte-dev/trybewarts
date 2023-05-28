@@ -76,7 +76,9 @@ main {
   display: inline-block;
 }
 
-#input-name , #input-lastname , #input-email {
+#input-name,
+#input-lastname,
+#input-email {
   width: 48%;
   padding: 10px;
   border: 1px solid transparent;
@@ -95,8 +97,6 @@ main {
 
 .segunda-parte {
   display: flex;
-
-  /* height: 150px; */
 }
 
 .sub-container {
@@ -104,7 +104,7 @@ main {
   flex-direction: column;
 }
 
-.sub-container:nth-of-type( 1 ) {
+.sub-container:nth-of-type(1) {
   flex-basis: 45%;
 }
 
