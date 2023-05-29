@@ -36,12 +36,10 @@ textarea.addEventListener('input', () => {
 });
 
 // 21. Substitua o formulário pelas informações da pessoa estudante.
-const verificaFamilia = () => {
-  return document.querySelector('input[name="family"]:checked').value;
-};
+const verificaFamilia = () => document.querySelector('input[name="family"]:checked').value;
 
 const verificaMateria = () => {
-  let arrayMaterias = [];
+  const arrayMaterias = [];
   const materias = document.querySelectorAll('input[class="subject"]:checked');
   for (let index = 0; index < materias.length; index += 1) {
     arrayMaterias.push(materias[index].value);
@@ -49,9 +47,7 @@ const verificaMateria = () => {
   return arrayMaterias.join(', ');
 };
 
-const verificaNota = () => {
-  return document.querySelector('input[name="rate"]:checked').value;
-};
+const verificaNota = () => document.querySelector('input[name="rate"]:checked').value;
 
 const formInfo = () => {
   const info = document.createElement('p');
