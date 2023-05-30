@@ -11,6 +11,7 @@ const emailInput = document.getElementById('input-email');
 const house = document.getElementById('house');
 const evaluationForm = document.getElementById('evaluation-form');
 
+
 // Função do requisito 3: valida valores digitados no header ao clicar no botão Entrar.
 loginBtn.addEventListener('click', () => {
   if (inputEmail.value && inputPw.value) {
@@ -64,5 +65,6 @@ const formInfo = () => {
 submitBtn.addEventListener('click', (event) => {
   event.preventDefault();
   evaluationForm.style.display = 'none';
+  formData.style.display = 'inline-block';
   formInfo();
 });

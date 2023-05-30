@@ -1,3 +1,8 @@
+@font-face {
+  font-family: '4PrivetDrive-Regular';
+  src: url("./fonts/4PrivetDrive-Regular.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +12,11 @@
 body {
   background-color: rgb(235, 235, 235);
   line-height: 20px;
+  font-family: 'Inknut Antiqua', serif;
+  font-weight: 300;
+  font-size: 0.9em;
 }
+
 
 /* 1. Crie uma barra verde na parte superior da página. */
 .header {
@@ -33,11 +42,12 @@ body {
 
 .trybewarts-login > button , #submit-btn {
   margin: 0 10px 0 5px;
-  padding: 6px 30px;
+  padding: 0 30px;
   background-color: rgb(93, 34, 121);
   color: white;
   border: 1px solid transparent;
   border-radius: 10px;
+  font-family: 'Inknut Antiqua', serif;
 }
 
 /* 3. Acrescente um formulário de login no header. */
@@ -88,7 +98,7 @@ main {
 
 #house {
   background-color: white;
-  width: 41%;
+  width: 40%;
   padding: 10px;
   border: 1px solid transparent;
   border-radius: 10px;
@@ -146,7 +156,7 @@ footer {
 }
 
 .radio-buttons > label {
-  margin: 15px 7px 15px 0;
+  margin: 15px 2px;
 }
 
 .textarea {
@@ -161,4 +171,33 @@ footer {
   position: absolute;
   right: 10px;
   bottom: 4px;
+}
+#form-data {
+  
+  display: none;
+  font-family: '4PrivetDrive-Regular';
+  background-image: url("./images/letter.png");
+  background-size: contain;
+  width: 467px;
+  height: 612px;
+  position: absolute;
+  left: 40%;
+}
+#form-data p {
+  font-size: large;
+  -webkit-animation: fadein 6s;
+  animation: fadein 6s;
+  left: 82px;
+  position: absolute;
+  bottom: 224px;
+  line-height: 2.5em;
+  font-weight: 900;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
