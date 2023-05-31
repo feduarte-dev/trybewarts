@@ -17,7 +17,6 @@ body {
   font-size: 0.9em;
 }
 
-
 /* 1. Crie uma barra verde na parte superior da página. */
 .header {
   display: flex;
@@ -64,7 +63,7 @@ main {
   display: flex;
   width: 675px;
 
-  /* 6. Faça com que a direção do formulário seja vertical. */
+/* 6. Faça com que a direção do formulário seja vertical. */
   flex-direction: column;
   padding: 0 60px;
 }
@@ -172,8 +171,8 @@ footer {
   right: 10px;
   bottom: 4px;
 }
+
 #form-data {
-  
   display: none;
   font-family: '4PrivetDrive-Regular';
   background-image: url("./images/letter.png");
@@ -183,6 +182,7 @@ footer {
   position: absolute;
   left: 40%;
 }
+
 #form-data p {
   font-size: large;
   -webkit-animation: fadein 6s;
@@ -193,10 +193,12 @@ footer {
   line-height: 2.5em;
   font-weight: 900;
 }
+
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+
 @-webkit-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
